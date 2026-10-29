@@ -1,0 +1,146 @@
+{
+  "treino": 60,
+  "teste": 20,
+  "acertos": 18,
+  "acuracia": 0.9,
+  "por_categoria": {
+    "eletrica": {
+      "acertos": 4,
+      "total": 5
+    },
+    "hidraulica": {
+      "acertos": 5,
+      "total": 5
+    },
+    "informatica": {
+      "acertos": 4,
+      "total": 5
+    },
+    "estrutura": {
+      "acertos": 5,
+      "total": 5
+    }
+  },
+  "casos": [
+    {
+      "texto": "A luz da biblioteca pisca durante a aula",
+      "categoria": "eletrica",
+      "previsao": "eletrica",
+      "acerto": true
+    },
+    {
+      "texto": "Uma tomada do corredor está aquecendo",
+      "categoria": "eletrica",
+      "previsao": "eletrica",
+      "acerto": true
+    },
+    {
+      "texto": "O disjuntor do bloco caiu novamente",
+      "categoria": "eletrica",
+      "previsao": "informatica",
+      "acerto": false
+    },
+    {
+      "texto": "Tem faísca saindo do interruptor",
+      "categoria": "eletrica",
+      "previsao": "eletrica",
+      "acerto": true
+    },
+    {
+      "texto": "Preciso de ajuda com o equipamento da sala",
+      "categoria": "eletrica",
+      "previsao": "eletrica",
+      "acerto": true
+    },
+    {
+      "texto": "A pia do laboratório não escoa a água",
+      "categoria": "hidraulica",
+      "previsao": "hidraulica",
+      "acerto": true
+    },
+    {
+      "texto": "O vaso do segundo andar está vazando",
+      "categoria": "hidraulica",
+      "previsao": "hidraulica",
+      "acerto": true
+    },
+    {
+      "texto": "Tem água pingando do cano no corredor",
+      "categoria": "hidraulica",
+      "previsao": "hidraulica",
+      "acerto": true
+    },
+    {
+      "texto": "A descarga do térreo está presa",
+      "categoria": "hidraulica",
+      "previsao": "hidraulica",
+      "acerto": true
+    },
+    {
+      "texto": "Há água no piso perto da janela",
+      "categoria": "hidraulica",
+      "previsao": "hidraulica",
+      "acerto": true
+    },
+    {
+      "texto": "Não consigo imprimir o arquivo na impressora",
+      "categoria": "informatica",
+      "previsao": "informatica",
+      "acerto": true
+    },
+    {
+      "texto": "O wifi do bloco não permite conexão",
+      "categoria": "informatica",
+      "previsao": "informatica",
+      "acerto": true
+    },
+    {
+      "texto": "O computador trava ao abrir o programa",
+      "categoria": "informatica",
+      "previsao": "informatica",
+      "acerto": true
+    },
+    {
+      "texto": "Esqueci a senha de acesso ao sistema",
+      "categoria": "informatica",
+      "previsao": "informatica",
+      "acerto": true
+    },
+    {
+      "texto": "O monitor não liga e a tomada está quente",
+      "categoria": "informatica",
+      "previsao": "eletrica",
+      "acerto": false
+    },
+    {
+      "texto": "A porta da biblioteca está sem maçaneta",
+      "categoria": "estrutura",
+      "previsao": "estrutura",
+      "acerto": true
+    },
+    {
+      "texto": "O vidro da sala está quebrado",
+      "categoria": "estrutura",
+      "previsao": "estrutura",
+      "acerto": true
+    },
+    {
+      "texto": "O piso da entrada está rachado",
+      "categoria": "estrutura",
+      "previsao": "estrutura",
+      "acerto": true
+    },
+    {
+      "texto": "A cadeira da secretaria está bamba",
+      "categoria": "estrutura",
+      "previsao": "estrutura",
+      "acerto": true
+    },
+    {
+      "texto": "A janela está emperrada e não abre",
+      "categoria": "estrutura",
+      "previsao": "estrutura",
+      "acerto": true
+    }
+  ]
+}
