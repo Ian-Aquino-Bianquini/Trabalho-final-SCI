@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Triagem de chamados</title>
+<style>
+body{font:18px/1.6 system-ui,sans-serif;background:#f3f5f6;color:#20303a;margin:0}
+main{max-width:780px;margin:60px auto;padding:36px;background:white;border-radius:12px}
+h1{font-size:32px;line-height:1.2}label{display:block;font-weight:600;margin-top:25px}
+textarea{box-sizing:border-box;width:100%;padding:15px;font:inherit;border:1px solid #89959c;border-radius:6px}
+button{padding:12px 22px;background:#185d64;color:white;border:0;border-radius:6px;font:inherit;cursor:pointer;margin-top:16px}
+#resultado{margin-top:30px;border-top:1px solid #ccd4d8;padding-top:20px}small{display:block;color:#52636d}
+@media(max-width:650px){main{margin:15px;padding:20px}}
+</style>
+<main>
+<h1>Triagem de chamados de manutenção</h1>
+<p>Descreva o problema para receber uma sugestão de encaminhamento.</p>
+<form id="formulario">
+<label for="texto">O que aconteceu?</label>
+<textarea id="texto" rows="4" maxlength="2000" required placeholder="Exemplo: A torneira do banheiro está vazando."></textarea>
+<button type="submit">Sugerir setor</button>
+</form>
+<div id="resultado" aria-live="polite" hidden><h2 id="setor"></h2><p id="motivo"></p></div>
+<small>Protótipo acadêmico treinado com exemplos fictícios. O encaminhamento precisa de conferência. Em caso de risco, procure imediatamente a equipe responsável.</small>
+</main>
+<script>
+document.getElementById('formulario').addEventListener('submit', async (evento) => {
+  evento.preventDefault();
+  const painel = document.getElementById('resultado');
+  const setor = document.getElementById('setor');
+  const motivo = document.getElementById('motivo');
+  painel.hidden = false;
+  setor.textContent = 'Consultando...';
+  motivo.textContent = '';
+  try {
+    const resposta = await fetch('/classificar', {
+      method: 'POST', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({texto: document.getElementById('texto').value})
+    });
+    const dados = await resposta.json();
+    if (!resposta.ok) throw new Error(dados.erro);
+    setor.textContent = dados.setor;
+    motivo.textContent = dados.motivo;
+  } catch (erro) {
+    setor.textContent = 'Não foi possível consultar';
+    motivo.textContent = erro.message;
+  }
+});
+</script>
+</html>
