@@ -1,0 +1,61 @@
+texto,categoria
+A tomada da sala está soltando faísca,eletrica
+A lâmpada do corredor queimou,eletrica
+O disjuntor desarma quando ligamos a luz,eletrica
+O interruptor da sala não funciona,eletrica
+O fio elétrico está exposto perto da janela,eletrica
+Há cheiro de queimado na tomada,eletrica
+O quadro de energia faz barulho,eletrica
+A iluminação do laboratório fica piscando,eletrica
+A sala ficou sem energia elétrica,eletrica
+A luminária do teto não acende,eletrica
+O cabo de energia está derretendo,eletrica
+A tomada está sem energia,eletrica
+A fiação do ventilador soltou,eletrica
+A luz do banheiro não liga,eletrica
+O painel elétrico está com defeito,eletrica
+A torneira do banheiro está vazando,hidraulica
+O cano da cozinha estourou,hidraulica
+O vaso sanitário está entupido,hidraulica
+A descarga do banheiro não funciona,hidraulica
+A pia está com vazamento,hidraulica
+O ralo do banheiro está entupido,hidraulica
+O bebedouro está vazando água,hidraulica
+O registro de água não fecha,hidraulica
+A tubulação está furada,hidraulica
+O chuveiro está pingando água,hidraulica
+O esgoto está voltando pelo ralo,hidraulica
+A caixa de água apresenta vazamento,hidraulica
+A torneira está sem água,hidraulica
+O encanamento da pia soltou,hidraulica
+A descarga fica liberando água sem parar,hidraulica
+O computador não conecta à internet,informatica
+A impressora não imprime documentos,informatica
+O teclado do computador não funciona,informatica
+O mouse está travando,informatica
+O sistema não aceita minha senha,informatica
+O programa fecha sozinho,informatica
+A rede wifi não conecta,informatica
+O monitor do computador não mostra imagem,informatica
+O computador está muito lento,informatica
+O arquivo não abre no sistema,informatica
+A impressora não aparece na rede,informatica
+O acesso ao email está bloqueado,informatica
+O software apresenta erro ao iniciar,informatica
+O computador não reconhece o teclado,informatica
+A conexão de internet caiu no laboratório,informatica
+A porta da sala está quebrada,estrutura
+A janela não fecha direito,estrutura
+A fechadura da porta está travada,estrutura
+O piso do corredor está solto,estrutura
+A parede da sala está com rachadura,estrutura
+A cadeira está com o pé quebrado,estrutura
+A mesa da biblioteca está bamba,estrutura
+O telhado está com telha solta,estrutura
+A maçaneta da porta caiu,estrutura
+O vidro da janela está trincado,estrutura
+O teto está com parte do reboco solta,estrutura
+O armário está com dobradiça quebrada,estrutura
+O portão está emperrado,estrutura
+A escada está com degrau quebrado,estrutura
+A parede precisa de reparo no reboco,estrutura
